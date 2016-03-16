@@ -823,7 +823,7 @@ pre .javascript .function {
   }
 }
 .comments {
-  margin: 60px 20px 0;
+  margin: 60px 0px 0;
 }
 .tag-cloud {
   text-align: center;
@@ -1511,7 +1511,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #12ffc7;
+  background: #0071ff;
 }
 .links-of-blogroll {
   font-size: 13px;
