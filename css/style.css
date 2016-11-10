@@ -124,7 +124,7 @@ body,
 }
 body {
   background: #fff;
-  font: 14px "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+  font: 14px "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
 }
@@ -383,7 +383,7 @@ a.article-title:hover {
   padding: 10px 0;
 }
 .article-entry blockquote {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   background: #f7f7f7;
   margin: 20px 0;
@@ -396,7 +396,7 @@ a.article-title:hover {
 .article-entry blockquote footer {
   font-size: 14px;
   margin: 2em 0;
-  font-family: "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+  font-family: "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .article-entry blockquote footer cite:before {
   content: "—";
@@ -605,7 +605,7 @@ a.article-title:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font: 14px "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+  font: 14px "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0 15px;
   color: #666;
   outline: none;
@@ -905,7 +905,7 @@ a.article-title:hover {
 .article-entry .gist .gist-file .gist-meta {
   background: #f7f7f7;
   color: #999;
-  font: 0.85em "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+  font: 0.85em "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: 0 0;
   padding: 0;
   margin-top: 1em;
