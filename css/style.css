@@ -124,9 +124,10 @@ body,
 }
 body {
   background: #fff;
-  font: 14px "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 16px "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
+  font-weight: 300;
 }
 .left,
 .alignleft {
@@ -164,7 +165,8 @@ body {
 .outer {
 /* max-width: (column-width + gutter-width) * columns + gutter-width */
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px;
+  padding-top: 65px;
 }
 .outer:before,
 .outer:after {
@@ -175,10 +177,16 @@ body {
   clear: both;
 }
 @media screen and (min-width: 768px) {
+  .outer {
+    padding-top: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
   #main {
     width: 1000px;
     padding-right: 50px;
     margin: 0 auto;
+    margin-top: 50px;
   }
 }
 ::-webkit-scrollbar {
@@ -248,7 +256,7 @@ body {
 .article-entry ol,
 .article-entry dl {
   margin: 0 20px;
-  line-height: 2em;
+  line-height: 24px;
 }
 .article-entry ul ul,
 .article-entry ol ul,
@@ -267,7 +275,8 @@ body {
   font-weight: bold;
 }
 .article {
-  margin: 50px 0;
+  margin: 0;
+  margin-bottom: 24px;
   border-bottom: 1px dashed #d9d9d9;
 }
 .article-inner {
@@ -299,7 +308,7 @@ body {
 }
 .article-title {
   text-decoration: none;
-  font-size: 16px;
+  font-weight: 400;
   color: #000;
   line-height: 1.1em;
   -webkit-transition: color 0.2s;
@@ -308,12 +317,11 @@ body {
   transition: color 0.2s;
 }
 a.article-title:hover {
-  color: #991a1a;
+  color: #000;
 }
 .article-entry {
-  color: #666;
+  color: #000;
   padding: 0;
-  padding-bottom: 20px;
 }
 .article-entry:before,
 .article-entry:after {
@@ -325,8 +333,8 @@ a.article-title:hover {
 }
 .article-entry p,
 .article-entry table {
-  line-height: 2em;
-  margin: 2em 0;
+  line-height: 24px;
+  margin: 24px 0;
 }
 .article-entry h1,
 .article-entry h2,
@@ -346,7 +354,7 @@ a.article-title:hover {
   margin: 1.1em 0;
 }
 .article-entry a {
-  color: #991a1a;
+  color: #000;
   text-decoration: none;
 }
 .article-entry a:hover {
@@ -355,8 +363,8 @@ a.article-title:hover {
 .article-entry ul,
 .article-entry ol,
 .article-entry dl {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .article-entry img,
 .article-entry video {
@@ -388,14 +396,14 @@ a.article-title:hover {
   background: #f7f7f7;
   margin: 20px 0;
   padding: 10px 20px;
-  border-left: 4px solid #991a1a;
+  border-left: 4px solid #000;
 }
 .article-entry blockquote p {
   margin: 0;
 }
 .article-entry blockquote footer {
-  font-size: 14px;
-  margin: 2em 0;
+  font-size: 16px;
+  margin: 24px 0;
   font-family: "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .article-entry blockquote footer cite:before {
@@ -467,19 +475,19 @@ a.article-title:hover {
   -webkit-border-radius: 15px;
   border-radius: 15px;
   background: #fff;
-  color: #991a1a;
+  color: #000;
   text-shadow: 0 1px #fff;
   text-decoration: none;
 }
 .article-more-link a:hover {
-  color: #991a1a;
+  color: #000;
   text-decoration: none;
 }
 .article-footer {
   font-size: 0.85em;
-  line-height: 2em;
+  line-height: 24px;
   border-top: 1px solid #ddd;
-  padding-top: 2em;
+  padding-top: 24px;
   margin: 0 20px 20px;
 }
 .article-footer:before,
@@ -495,7 +503,7 @@ a.article-title:hover {
   text-decoration: none;
 }
 .article-footer a:hover {
-  color: #666;
+  color: #000;
 }
 .article-tag-list-item {
   float: left;
@@ -547,7 +555,7 @@ a.article-title:hover {
   display: block;
 }
 .article-nav-link-wrap:hover {
-  color: #666;
+  color: #000;
 }
 @media screen and (min-width: 768px) {
   .article-nav-link-wrap {
@@ -581,7 +589,7 @@ a.article-title:hover {
 }
 .article-nav-title {
   font-size: 0.85em;
-  line-height: 2em;
+  line-height: 24px;
   margin-top: 0.5em;
 }
 .article-share-box {
@@ -607,7 +615,7 @@ a.article-title:hover {
   box-sizing: border-box;
   font: 14px "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0 15px;
-  color: #666;
+  color: #000;
   outline: none;
   border: 1px solid #ddd;
   -webkit-border-radius: 3px 3px 0 0;
@@ -650,12 +658,24 @@ a.article-title:hover {
   max-width: 100%;
   margin: 0 auto;
 }
+p.IMG_intro {
+  margin-top: -1.5em;
+  margin-bottom: 0em;
+  padding: 20px;
+  display: block;
+  background-color: #000;
+  color: #fff;
+}
+p.article-more-link {
+  font-size: 14px;
+  font-weight: 400;
+}
 #comments {
   background: #fff;
   margin: 50px 0;
 }
 #comments a {
-  color: #991a1a;
+  color: #000;
 }
 .archives-wrap {
   margin: 50px 0;
@@ -703,15 +723,15 @@ a.article-title:hover {
 .archive-article-title {
   text-decoration: none;
   font-weight: bold;
-  color: #666;
+  color: #000;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -ms-transition: color 0.2s;
   transition: color 0.2s;
-  line-height: 2em;
+  line-height: 24px;
 }
 .archive-article-title:hover {
-  color: #991a1a;
+  color: #000;
 }
 .archive-article-footer {
   margin-top: 1em;
@@ -750,7 +770,7 @@ a.article-title:hover {
   text-decoration: none;
 }
 #page-nav a:hover {
-  background: #991a1a;
+  background: #000;
   color: #fff;
 }
 #page-nav .prev {
@@ -768,7 +788,7 @@ a.article-title:hover {
   }
 }
 #page-nav .current {
-  color: #991a1a;
+  color: #000;
   font-weight: bold;
 }
 #page-nav .space {
@@ -788,14 +808,14 @@ a.article-title:hover {
   }
 }
 #footer a {
-  color: #991a1a;
+  color: #000;
   text-decoration: none;
 }
 #footer a:hover {
   text-decoration: underline;
 }
 #footer-info {
-  line-height: 2em;
+  line-height: 24px;
   font-size: 0.85em;
   padding: 0;
   margin: 0;
@@ -809,7 +829,7 @@ a.article-title:hover {
   padding: 10px 10px;
   overflow: auto;
   color: #666;
-  line-height: 28px;
+  line-height: 384px;
 }
 .article-entry .highlight .gutter pre,
 .article-entry .gist .gist-file .gist-data .line-numbers {
@@ -870,7 +890,7 @@ a.article-title:hover {
   border-radius: 0;
 }
 .article-entry .highlight .line {
-  height: 28px;
+  height: 384px;
 }
 .article-entry .gist {
   margin: 0 -20px;
@@ -912,7 +932,7 @@ a.article-title:hover {
   margin-left: 20px;
 }
 .article-entry .gist .gist-file .gist-meta a {
-  color: #991a1a;
+  color: #000;
   font-weight: normal;
 }
 .article-entry .gist .gist-file .gist-meta a:hover {
